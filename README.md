@@ -1,4 +1,4 @@
-# 💼 Abhijeet's Portfolio Website
+# 💼 Mehdi chouk's Portfolio Website
 
 A modern, responsive personal portfolio website showcasing my work as a full-stack web developer. Built with HTML, CSS, JavaScript, Bootstrap, GSAP, and integrated with a stunning animated particle background.
 
@@ -28,7 +28,7 @@ A modern, responsive personal portfolio website showcasing my work as a full-sta
 
 ## 📸 Live Preview
 
-👉 [[Live Demo]](https://abhijeetbhale.github.io/Portfolio/)
+👉 [[Live Demo]](https://Mehdi1chouk.github.io/Portfolio_Mehdi_Chouk/)
 
 ---
 
