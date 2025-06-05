@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio / Mehdi Chouk</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="assets\android-chrome-512x512.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#1DCD9F] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#1DCD9F]"></div>
+</div>
+    <!-- Loading Animation -->
+<div id="loading">
+  <div class="loading-text" id="name-loader">
+    <span data-text="M">M</span>
+    <span data-text="E">E</span>
+    <span data-text="H">H</span>
+    <span data-text="D">D</span>
+    <span data-text="I">I</span>
+    <span data-text="C">C</span>
+    <span data-text="H">H</span>
+    <span data-text="O">O</span>
+    <span data-text="U">U</span>
+    <span data-text="K">K</span>
+  </div>
+</div>
+
+    <!-- Hero Section -->
+<section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+  <!-- Hero Particle Background -->
+  <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+
+  <!-- Hero Content -->
+  <div class="container text-center position-relative" style="z-index: 1">
+    <h1 class="display-4 fw-bold">
+      <span class="text-white me-2">Hi, I'm</span>
+      <button class="button" data-text="Abhijeet">
+        <span class="actual-text">&nbsp;Mehdi_Chouk&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Mehdi_Chouk&nbsp;</span>
+      </button>
+    </h1>
+    <p class="lead text-light mt-3">
+      An aspiring Full Stack Developer passionate about building sleek web
+      experiences.
+    </p>
+    <a href="#projects" class="shadow__btn mt-4">View Projects</a>
+  </div>
+</section>
+
+    <!-- About Me Section -->
+<section id="about" class="bg-black text-white py-20 px-6">
+  <div
+    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4"
+  >
+    <!-- Profile Image -->
+    <div
+      class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-lg grayscale hover:grayscale-0 transition duration-500"
+      id="about-img"
+    >
+      <img
+        src="./assets/mehdi.jpeg"
+        alt="Mehdi Chouk"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-2xl" id="about-text">
+      <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+        I’m <span class="text-[#1DCD9F] font-bold">Mehdi Chouk</span>, a
+        Full Stack Developer building creative and scalable web
+        applications.
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        I'm currently pursuing my Computer Science Engineering studies at
+        EPI Digital school,Sousse. I specialize in both frontend and
+        backend development, transforming ideas into functional digital
+        experiences using modern technologies.
+      </p>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+       I'm passionate about innovation and new technologies. I'm always eager 
+        to take on new challenges, continuously learn, and bring creative ideas 
+        to life through impactful digital solutions.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-5 mt-6 align-items-center justify-content-center md:justify-start">
+        
+        <a
+          href="https://www.linkedin.com/in/mehdi-chouk-5b04a1221/"
+          target="_blank"
+          class="text-[#0a66c2] text-2xl hover:text-[#339af0] transition"
+        >
+          <img src="./assets/linkedin-logo.png"  class="w-6 h-6" alt="linkedin-logo">
+        </a>
+        <a
+          href="mailto:mehdichouk.tn@gmail.com"
+          class="text-white text-2xl hover:text-gray-400 transition"
+        >
+          <img src="./assets/mail-logo.png" class="w-6 h-6" alt="mail-logo">
+        </a>
+        <a
+          href="https://github.com/Mehdi1chouk"
+          target="_blank"
+          class="text-white text-2xl hover:text-gray-400 transition"
+        >
+          <img src="./assets/github-logo.png" class="w-6 h-6" alt="github-logo">
+        </a>
+      </div>
+
+      <!-- Download Resume Button -->
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+    
+      <a href="./assets/Cv_Mehdi_chouk_FR.pdf" download>
+        <button class="dbutton" type="button">
+          <span class="dbutton__text">CV - FR</span>
+          <span class="dbutton__icon">
+            <!-- SVG ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+              <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+              <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+              <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+            </svg>
+          </span>
+        </button>
+      </a>
+
+  <!-- English CV -->
+      <a href="./assets/Cv_Mehdi_chouk_EN.pdf" download>
+        <button class="dbutton" type="button">
+          <span class="dbutton__text">CV - EN</span>
+          <span class="dbutton__icon">
+            <!-- SVG ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+              <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+              <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+              <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+            </svg>
+          </span>
+        </button>
+      </a>
+</div>
+
+    </div>
+  </div>
+</section>
+<!-- JOURNEY SECTION -->
+<section id="journey" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#1DCD9F]">My Journey</h2>
+    
+    <div class="relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
+
+      <!-- Timeline Card 1 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">End of year project(PFA) at @EPI Digital School</h3>
+            <span class="text-sm text-gray-400">January 2025 - April 2025 (Sousse - Tunisia)</span>
+            <p class="mt-2 text-gray-300">Developed a web platform for searching available rooms and
+                  roommates, featuring real-time chat and instant notifications
+                  powered byWebSocket for seamless user communication.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+
+      <!-- Timeline Card 2 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">End of study Internship @Alliance Com&Events</h3>
+            <span class="text-sm text-gray-400">February 2023 - June 2023 (Sousse - Tunisia)</span>
+            <p class="mt-2 text-gray-300">Developed a web platform for managing real estate rentals in Tunisia.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Card 3 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Summer Internship @WIMOBI</h3>
+            <span class="text-sm text-gray-400">July 2022 -August 2022 (Mahdia-Tunisia)</span>
+            <p class="mt-2 text-gray-300">Developed a web application for managing property listings.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+
+
+
+      <!-- Timeline Card 4 - Right -->
+        <div class="relative mb-16 md:mb-24 md:flex justify-end">
+          <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+          <div class="md:w-1/2"></div>
+          <div class="md:w-1/2 md:pl-10">
+            <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+              <h3 class="text-xl font-semibold text-[#1DCD9F]">Internship @Tav Information Services</h3>
+              <span class="text-sm text-gray-400">June 2022 -July 2022 (Monastir-Tunisia)</span>
+              <p class="mt-2 text-gray-300">Realization of a dynamic web application to manage IT equipment.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col gap-20">
+    <!-- FRONTEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="frontend">
+      <!-- Label -->
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#frontend').scrollIntoView({behavior: 'smooth'})">FRONTEND <br/>&<br/> Backend<br/> technologies</div>
+      </div>
+
+      <!-- Tech Grid -->
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <!-- Tech Icons Here -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  class="w-6 h-6"/><span class="text-lg">HTML</span></div>
+
+        <div class="flex items-center gap-2 "><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6"><span class="text-lg">Javascript</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-6 h-6"><span class="text-lg">React</span></div>
+        
+        <div class="flex items-center gap-2">
+          
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" class="w-6 h-6"/>
+         <span class="text-lg">Angular</span></div>
+        
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-6 h-6" />
+         <span class="text-lg">CSS</span></div>
+                 <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span class="text-lg">Python</span></div>
+        <div class="flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" class="w-6 h-6"><span class="text-lg">Spring Boot</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-6 h-6"><span class="text-lg">Bootstrap</span></div>
+
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6"><span class="text-lg">Node.js</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-6 h-6 bg-white rounded p-0.5"><span class="text-lg">Express.js</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-6 h-6"><span class="text-lg">TypeScript</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="w-6 h-6"><span class="text-lg">Java</span></div>
+          </div>
+    </div>
+
+    <!-- DATABASE -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="database">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#database').scrollIntoView({behavior: 'smooth'})">DATABASE</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6 h-6"><span class="text-lg">MongoDB</span></div>
+        <div class="flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" class="w-6 h-6"><span class="text-lg">Firebase</span></div>
+        <div class="flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="w-6 h-6"><span class="text-lg">Mysql</span></div>
+        
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="tools">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#tools').scrollIntoView({behavior: 'smooth'})">TOOLS</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6"><span class="text-lg">Git</span></div>
+        <div class="flex items-center gap-2">
+          <img src="./assets/github-logo.png" class="w-6 h-6"><span class="text-lg">GitHub</span></div>
+      
+      <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" class="w-6 h-6"><span class="text-lg">Postman</span></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <!-- ACTUAL PROJECT CONTENT -->
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Projects</h2>
+      <p class="text-gray-300 text-lg">Some of the things I've built.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/logoApp.png" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Binomy platform</h3>
+          <p class="text-gray-700 mb-4">
+            A web platform for searching available rooms and roommates, featuring real-time chat and instant notifications powered byWebSocket for seamless user communication.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/react/react-original.svg" alt="React" class="w-4 h-4" />
+              React
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="w-4 h-4" />
+              Express
+            </span>
+           
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-4 h-4" />
+              MongoDB
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4" />
+                Node.js
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+                <a href="javascript:void(0)" onclick="openCarousel(Binomyimages)"
+                  class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+                  Photos
+                </a>
+
+
+            <a href="#" onclick="alert('This website will be hosted soon!')" 
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/SOKNA.png" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Sokna Platform</h3>
+          <p class="text-gray-700 mb-4">
+            A web platform for managing real estate rentals in Tunisia.  
+            Property owners can list their houses with full details and images.  
+            Renters can browse listings, select their desired move-in date, and confirm the rental with ease.
+          </p>
+
+          <!-- Tech Stack Badges -->
+           
+          <div class="flex flex-wrap gap-3 mb-4">
+
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Express" class="w-4 h-4" />
+              Angular
+            </span>
+            
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="w-4 h-4" />
+              Express
+            </span>
+           
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-4 h-4" />
+              MongoDB
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4" />
+                Node.js
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="javascript:void(0)" onclick="openCarousel(soknaimages)"
+                  class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+                  Photos
+                </a>
+            <a href="https://github.com/Mehdi1chouk/colocation_project" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/books_list.JPG" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">OnlineLibrary Website</h3>
+          <p class="text-gray-700 mb-4">
+           A web application for browsing a collection of books, complete with author information, descriptions, and cover images.  
+            Users can borrow available books.  
+            Built with Spring Boot, integrated with Swagger for API documentation, and secured using Spring Security.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" alt="HTML" class="w-4 h-4" />
+              Spring boot
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" alt="TailwindCSS" class="w-4 h-4" />
+              Swagger
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" class="w-4 h-4" />
+              Bootstrap
+            </span>
+            
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="javascript:void(0)" onclick="openCarousel(onlinelibraryimages)"
+                  class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+                  Photos
+                </a>
+            <a href="https://github.com/Mehdi1chouk/OnlineLibrary" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+        
+           
+          
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/wassit.JPG" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Wassit Platform</h3>
+          <p class="text-gray-700 mb-4">
+            A web application for managing property listings, allowing users to sell, rent, or exchange real estate.  
+            The platform streamlines listing management and helps users easily connect with potential buyers or tenants.
+          </p>
+          
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular" class="w-4 h-4" />
+    Angular
+  </span>
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg" alt="Material Design" class="w-4 h-4" />
+    AngularMaterial
+  </span>
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="Firebase" class="w-4 h-4" />
+    Firebase
+  </span>
+</div>
+
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="javascript:void(0)" onclick="openCarousel(Wassitimages)"
+                  class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+                  Photos
+                </a>
+            <a href="https://github.com/Mehdi1chouk/GestionDesImmobilier" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING PROJECTS SECTION -->
+<!-- <section id="upcoming-projects" class="relative bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Upcoming Projects</h2>
+    <p class="text-gray-400 text-lg">Some exciting ideas I'm currently working on.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+   
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Social Media App</h3>
+      <p class="text-gray-700 text-lg mb-4">A modern social media platform featuring user profiles, posts, real-time chat, notifications, and interactive feeds built with the MERN stack and Next.js.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+
+    
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">School Management Dashboard</h3>
+      <p class="text-gray-700 text-lg mb-4">A MERN-based admin dashboard to manage students, attendance, teachers, and performance data with charts and analytics.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+
+    
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Rental Web Application</h3>
+      <p class="text-gray-700 text-lg mb-4">A property rental platform with user authentication, property listings, filtering, booking system, and admin control panel.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+  </div>
+</section> -->
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-black text-white py-20 px-6 flex items-center justify-center">
+  <div class="w-full max-w-4xl text-center flex flex-col items-center gap-6">
+    <!-- Subtitle -->
+    <p class="text-gray-400 text-lg">Let's connect and build something amazing!</p>
+
+    <!-- Email Link -->
+    <a href="mailto:mehdichouk.tn@gamil.com" class="hover:text-gray-400 transition">
+      <h2 class="text-4xl font-bold mb-2">mehdichouk.tn@gmail.com</h2>
+    </a>
+
+  </div>  
+</section>
+    <a
+      href="mailto:mehdichouk.tn@gmail.com?subject=Let's Connect&body=Hi mehdi,%0D%0A%0D%0AI wanted to get in touch with you..."
+      class="fixed-email"
+      title="Mail Me"
+    >
+      mehdichouk.tn@gmail.com
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
+<!-- Modal -->
+<!-- Carousel Modal -->
+<div id="carouselModal" class="fixed inset-0 bg-black bg-opacity-80 hidden z-50 flex items-center justify-center">
+  <div class="relative w-full max-w-4xl px-4">
+    
+    <!-- Close Button -->
+    <button onclick="closeCarousel()"
+      class="fixed top-4 right-6 text-white text-4xl z-50 hover:text-gray-300 transition">&times;</button>
+
+    <!-- Image -->
+    <img id="carouselImage" src="" alt="Screenshot"
+      class="w-full h-auto rounded shadow-lg max-h-[90vh] object-contain mx-auto" />
+
+    <!-- Prev Arrow -->
+    <button onclick="prevImage()"
+      class="fixed left-4 top-1/2 transform -translate-y-1/2 text-white text-5xl z-50 hover:text-gray-300 transition">
+      &#10094;
+    </button>
+
+    <!-- Next Arrow -->
+    <button onclick="nextImage()"
+      class="fixed right-4 top-1/2 transform -translate-y-1/2 text-white text-5xl z-50 hover:text-gray-300 transition">
+      &#10095;
+    </button>
+    
+  </div>
+</div>
+
+
