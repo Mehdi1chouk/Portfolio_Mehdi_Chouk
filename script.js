@@ -293,37 +293,40 @@ const Binomyimages = [
   './assets/binomy/archi.JPG',
 ];
 const Wassitimages = [
-  './assets/wassit/wassit.JPG',
+  
+  './assets/wassit/hello.JPG',
   './assets/wassit/signup.JPG',
   './assets/wassit/login.JPG',
+  './assets/wassit/wassit.JPG',
   './assets/wassit/details.JPG',
   './assets/wassit/details2.JPG',
   './assets/wassit/addhouse.JPG',
-  './assets/wassit/hello.JPG',
+  
 ];
 const soknaimages = [
-  './assets/sokna/addlog1.JPG',
-  './assets/sokna/addlog2.JPG',
-  './assets/sokna/addlog3.JPG',
+  './assets/sokna/login.JPG',
+  './assets/sokna/register.JPG',
   './assets/sokna/ccompte.JPG',
   './assets/sokna/compte.JPG',
   './assets/sokna/dash.JPG',
+  './assets/sokna/addlog1.JPG',
+  './assets/sokna/addlog2.JPG',
+  './assets/sokna/addlog3.JPG',
   './assets/sokna/details2.JPG',
   './assets/sokna/details3.JPG',
   './assets/sokna/filtre.JPG',
   './assets/sokna/housedetails.JPG',
-  './assets/sokna/login.JPG',
-  './assets/sokna/register.JPG',
+  
 ];
 
 const onlinelibraryimages = [
+  './assets/onlinelibrary/login.JPG',
+  './assets/onlinelibrary/register.JPG',
   './assets/onlinelibrary/author_add.JPG',
   './assets/onlinelibrary/book_add.JPG',
   './assets/onlinelibrary/books_list.JPG',
   './assets/onlinelibrary/borrowed_books.JPG',
   './assets/onlinelibrary/brrdbooks.JPG',
-  './assets/onlinelibrary/login.JPG',
-  './assets/onlinelibrary/register.JPG',
   './assets/onlinelibrary/search.JPG',
   './assets/onlinelibrary/swagger.JPG',
 ];
