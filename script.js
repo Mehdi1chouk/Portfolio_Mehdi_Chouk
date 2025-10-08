@@ -331,6 +331,19 @@ const onlinelibraryimages = [
   './assets/onlinelibrary/swagger.JPG',
 ];
 
+const bonplanimages = [
+  './assets/bonplan/home.JPG',
+  './assets/bonplan/activities.JPG',
+  './assets/bonplan/images.JPG',
+  './assets/bonplan/actdetails.JPG',
+  './assets/bonplan/completebooking.JPG',
+  './assets/bonplan/bookinghHstory.JPG',
+  './assets/bonplan/bookingdetails.JPG',
+  './assets/bonplan/notif.JPG',
+  './assets/bonplan/msg.JPG',
+  './assets/bonplan/mail.JPG',
+];
+
 let carouselImages = []; // this will point to the array in use
 let currentIndex = 0;
 

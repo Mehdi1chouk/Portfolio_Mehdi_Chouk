@@ -178,12 +178,26 @@
       <!-- Vertical Line -->
       <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
 
+
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Summer Internship @ERNST TN</h3>
+            <span class="text-sm text-gray-400">July 2025 - September 2025 (Mahdia - Tunisia)</span>
+            <p class="mt-2 text-gray-300">Developed a web platform showcasing special offers and activities in
+                Tunisia, with integrated booking, real-time chat, and instant notifications.</p>
+          </div>
+        </div>
+      </div>
+
       <!-- Timeline Card 1 - Left -->
       <div class="relative mb-16 md:mb-24 md:flex justify-start">
         <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
         <div class="md:w-1/2 md:pr-10">
           <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
-            <h3 class="text-xl font-semibold text-[#1DCD9F]">End of year project(PFA) at @EPI Digital School</h3>
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">End of year project(PFA) @EPI Digital School</h3>
             <span class="text-sm text-gray-400">January 2025 - April 2025 (Sousse - Tunisia)</span>
             <p class="mt-2 text-gray-300">Developed a web platform for searching available rooms and
                   roommates, featuring real-time chat and instant notifications
@@ -192,6 +206,9 @@
         </div>
         <div class="md:w-1/2"></div>
       </div>
+
+
+      
 
       <!-- Timeline Card 2 - Right -->
       <div class="relative mb-16 md:mb-24 md:flex justify-end">
@@ -326,11 +343,63 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+
+      <!-- SINGLE PROJECT CARD -->
+
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/bonplan/activities.JPG" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">BestPlan Platform</h3>
+          <p class="text-gray-700 mb-4">
+            A web platform showcasing special offers and activities in Tunisia, with integrated booking, real-time chat, and instant notifications.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Express" class="w-4 h-4" />
+              Angular
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="w-4 h-4" />
+              Express
+            </span>
+           
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-4 h-4" />
+              MongoDB
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4" />
+                Node.js
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+                <a href="javascript:void(0)" onclick="openCarousel(bonplanimages)"
+                  class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+                  Photos
+                </a>
+
+
+            <a href="#" onclick="alert('This platform will be hosted soon!')" 
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
       <!-- SINGLE PROJECT CARD -->
       <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
         <img src="./assets/logoApp.png" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
         <div class="p-6">
-          <h3 class="text-2xl font-semibold mb-2">Binomy platform</h3>
+          <h3 class="text-2xl font-semibold mb-2">Binomy Platform</h3>
           <p class="text-gray-700 mb-4">
             A web platform for searching available rooms and roommates, featuring real-time chat and instant notifications powered byWebSocket for seamless user communication.
           </p>
@@ -372,6 +441,13 @@
         </div>
       </div>
       <!-- /SINGLE PROJECT CARD -->
+
+
+
+
+
+
+
 
       <!-- SINGLE PROJECT CARD -->
       <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
