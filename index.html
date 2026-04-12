@@ -136,11 +136,11 @@
       <!-- Download Resume Button -->
   <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
     
-      <a href="./assets/CV_Mehdi_Chouk_fr.pdf" download>
+      <!-- <a href="./assets/CV_Mehdi_Chouk_fr.pdf" download>
         <button class="dbutton" type="button">
           <span class="dbutton__text">CV - FR</span>
           <span class="dbutton__icon">
-            <!-- SVG ICON -->
+            
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
               <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
               <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
@@ -148,7 +148,7 @@
             </svg>
           </span>
         </button>
-      </a>
+      </a> -->
 
   <!-- English CV -->
       <a href="./assets/Cv_Mehdi_chouk_EN.pdf" download>
@@ -179,6 +179,20 @@
       <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
 
 
+
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">End-of-study Internship @Wind-consulting</h3>
+            <span class="text-sm text-gray-400">February 2026 – June 2026 (Mahdia - Tunisia)</span>
+            <p class="mt-2 text-gray-300">Developed a multi-tenant SaaS platform for automated code testing with real-time error detection, observability, and Jira-like ticketing workflow.</p>
+          </div>
+        </div>
+      </div>
+
+
       <div class="relative mb-16 md:mb-24 md:flex justify-end">
         <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
         <div class="md:w-1/2"></div>
@@ -197,8 +211,8 @@
         <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
         <div class="md:w-1/2 md:pr-10">
           <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
-            <h3 class="text-xl font-semibold text-[#1DCD9F]">End of year project(PFA) @EPI Digital School</h3>
-            <span class="text-sm text-gray-400">January 2025 - April 2025 (Sousse - Tunisia)</span>
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Internship @Tav Information Services</h3>
+            <span class="text-sm text-gray-400">July 2024 - August 2024 (Monastir - Tunisia)</span>
             <p class="mt-2 text-gray-300">Developed a web platform for searching available rooms and
                   roommates, featuring real-time chat and instant notifications
                   powered byWebSocket for seamless user communication.</p>
@@ -239,7 +253,7 @@
 
 
       <!-- Timeline Card 4 - Right -->
-        <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <!-- <div class="relative mb-16 md:mb-24 md:flex justify-end">
           <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
           <div class="md:w-1/2"></div>
           <div class="md:w-1/2 md:pl-10">
@@ -249,7 +263,7 @@
               <p class="mt-2 text-gray-300">Realization of a dynamic web application to manage IT equipment.</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
     </div>
   </div>
@@ -346,6 +360,63 @@
 
 
       <!-- SINGLE PROJECT CARD -->
+
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/bonplan/activities.JPG" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">LogMonitoring Platform</h3>
+          <p class="text-gray-700 mb-4">
+            A scalable multi-tenant SaaS platform enabling automated code execution and error analysis, with dynamic containerization, real-time monitoring, and a Jira-like ticketing system.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Express" class="w-4 h-4" />
+              Angular
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" alt="HTML" class="w-4 h-4" />
+              Spring boot
+            </span>
+           
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="MongoDB" class="w-4 h-4" />
+              PostgreSQL
+            </span>
+
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="MongoDB" class="w-4 h-4" />
+              Docker
+            </span>
+            
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+                <a href="javascript:void(0)" onclick="openCarousel(logmonitoringmages)"
+                  class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+                  Photos
+                </a>
+
+
+            <!-- <a href="https://github.com/Mehdi1chouk/bonplan_backend"  target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
 
       <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
         <img src="./assets/bonplan/activities.JPG" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />

@@ -344,6 +344,21 @@ const bonplanimages = [
   './assets/bonplan/mail.JPG',
 ];
 
+const logmonitoringmages = [
+  './assets/logmonitoring/homePage.JPG',
+  './assets/logmonitoring/login.JPG',
+  './assets/logmonitoring/magicLink.JPG',
+  './assets/logmonitoring/projects.JPG',
+  './assets/logmonitoring/users.JPG',
+  './assets/logmonitoring/adduser.JPG',
+  './assets/logmonitoring/assignusertoproject.JPG',
+  './assets/logmonitoring/projectDetails.JPG',
+  './assets/logmonitoring/containers.JPG',
+  './assets/logmonitoring/logs.JPG',
+  './assets/logmonitoring/logs1.JPG',
+  
+];
+
 let carouselImages = []; // this will point to the array in use
 let currentIndex = 0;
 
