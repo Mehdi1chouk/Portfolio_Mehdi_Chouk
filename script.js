@@ -359,6 +359,24 @@ const logmonitoringmages = [
   
 ];
 
+const epaveparisimages = [
+  './assets/epaveparis/acceuil.JPG',
+  './assets/epaveparis/home1.JPG',
+  './assets/epaveparis/home2.JPG',
+  './assets/epaveparis/home3.JPG',
+  './assets/epaveparis/home4.JPG',
+  './assets/epaveparis/home5.JPG',
+  './assets/epaveparis/rachat.JPG',
+  './assets/epaveparis/rachat1.JPG',
+  './assets/epaveparis/enlevement.JPG',
+  './assets/epaveparis/enlevement2.JPG',
+  './assets/epaveparis/chauffeur.JPG',
+  './assets/epaveparis/centrevhu.JPG',
+  './assets/epaveparis/details1.JPG',
+  './assets/epaveparis/details2.JPG',
+  './assets/epaveparis/archive.JPG',
+];
+
 let carouselImages = []; // this will point to the array in use
 let currentIndex = 0;
 
