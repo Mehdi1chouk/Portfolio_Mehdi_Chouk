@@ -377,6 +377,16 @@ const epaveparisimages = [
   './assets/epaveparis/archive.JPG',
 ];
 
+const nolimitstravelsimages = [
+  './assets/NoLimitTravel/NT1.JPG',
+  './assets/NoLimitTravel/NT2.JPG',
+  './assets/NoLimitTravel/NT3.JPG',
+  './assets/NoLimitTravel/NT4.JPG',
+  './assets/NoLimitTravel/NT5.JPG',
+  './assets/NoLimitTravel/NT6.JPG',
+  './assets/NoLimitTravel/NT0.JPG',
+];
+
 let carouselImages = []; // this will point to the array in use
 let currentIndex = 0;
 
